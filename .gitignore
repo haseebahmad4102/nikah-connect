@@ -1,0 +1,30 @@
+# NikahConnect .gitignore
+
+# Uploads (ignore uploaded images but keep directory structure)
+uploads/avatars/*
+!uploads/avatars/.gitkeep
+uploads/gallery/*
+!uploads/gallery/.gitkeep
+
+# Environment and sensitive configuration files
+.env
+config.local.php
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# IDE / Editor configuration
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs and temporary files
+*.log
+error_log

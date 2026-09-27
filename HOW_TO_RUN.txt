@@ -1,0 +1,124 @@
+============================================================
+  NikahConnect — Islamic Matrimonial Platform
+  Halal Matchmaking for Muslim Families
+============================================================
+
+HOW TO RUN ON XAMPP:
+====================
+
+STEP 1: Start XAMPP
+  - Open XAMPP Control Panel
+  - Start "Apache" and "MySQL"
+
+STEP 2: Copy Files
+  - Copy the entire "nikahconnect" folder to:
+    C:\xampp\htdocs\nikahconnect\
+
+STEP 3: Setup Database (AUTOMATIC)
+  - Open browser: http://localhost/nikahconnect/setup.php
+  - This creates the database and sample data automatically
+  - After setup, DELETE setup.php (for security)
+
+  --- OR MANUAL SETUP ---
+  - Open: http://localhost/phpmyadmin
+  - Create database named: nikahconnect
+  - Import the file: database.sql
+
+  --- UPGRADING AN EXISTING DATABASE ---
+  - If you already imported an OLDER database.sql, do NOT re-import.
+  - Instead import: migration_parents.sql  (adds parent/guardian
+    accounts, parent-based rishta approval, and visit scheduling).
+
+STEP 4: Open the Website
+  - Homepage:     http://localhost/nikahconnect/
+  - Admin Panel:  http://localhost/nikahconnect/admin/
+
+============================================================
+LOGIN CREDENTIALS:
+============================================================
+
+  ADMIN:
+  Email:    admin@nikahconnect.com
+  Password: admin123
+
+  SAMPLE USER (Male):
+  Email:    ahmed@example.com
+  Password: user123
+
+  SAMPLE USER (Female):
+  Email:    fatima@example.com
+  Password: user123
+
+  SAMPLE GUARDIAN of Ahmed (Male ward):
+  Email:    parent.ahmed@example.com
+  Password: user123
+
+  SAMPLE GUARDIAN of Fatima (Female ward):
+  Email:    parent.fatima@example.com
+  Password: user123
+
+  NOTE: Guardians log in separately and approve rishtas.
+  A boy/girl can NEVER approve on their own — a rishta becomes
+  "successful" only when BOTH guardians approve. After that, the
+  couple/families agree on a visit date (one proposes, other confirms).
+
+============================================================
+WEBSITE PAGES:
+============================================================
+
+  Homepage        → /index.php
+  Register        → /register.php
+  Login           → /login.php
+  Dashboard       → /dashboard.php
+  Browse Profiles → /profiles.php
+  My Matches      → /matches.php
+  Messages        → /messages.php
+  Interests       → /interests.php
+  Guardian Panel  → /guardian.php   (parent/guardian login)
+  Chat Monitor    → /view-chat.php  (guardian read-only chat view)
+  Guardian (Wali) → /wali.php
+  Preferences     → /preferences.php
+  Settings        → /settings.php
+  About           → /about.php
+
+  Admin Dashboard → /admin/index.php
+  Manage Users    → /admin/users.php
+  Manage Profiles → /admin/profiles.php
+  Message Monitor → /admin/messages.php
+  View Interests  → /admin/interests.php
+  Reports         → /admin/reports.php
+
+============================================================
+TECHNOLOGY STACK:
+============================================================
+  - PHP (Backend)
+  - HTML5 + CSS3 (Frontend)
+  - JavaScript (Interactivity)
+  - MySQL (Database)
+  - XAMPP (Local Server)
+  - Font Awesome 6 (Icons)
+  - Google Fonts: Poppins + Amiri (Arabic)
+
+============================================================
+FEATURES:
+============================================================
+  ✓ Beautiful Islamic design (Green & Gold theme)
+  ✓ Quran verses & Hadiths in Arabic (Amiri font)
+  ✓ User Registration & Login (Male/Female)
+  ✓ Detailed Profile Creation
+  ✓ Guardian (Wali) System
+  ✓ Preference-based Matching Algorithm
+  ✓ Profile Browsing with Filters
+  ✓ Compatibility Score (%)
+  ✓ Interest System (Send/Accept/Reject)
+  ✓ Halal Chat (with modesty filters)
+  ✓ Wali can view all messages
+  ✓ Admin Panel with full management
+  ✓ Flagged messages detection
+  ✓ Reports & Analytics
+  ✓ Notifications System
+  ✓ Responsive (Mobile-friendly)
+
+============================================================
+  NikahConnect — Open Source Islamic Matrimonial System
+============================================================
